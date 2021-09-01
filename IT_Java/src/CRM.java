@@ -1,16 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class CRM {
-    public static StrategyContext strategyContext = new StrategyContext();
+    public static ProfilePage profileList = new ProfilePage();
+    public static SchedulePage schedulePage = new SchedulePage();
     public static void main(String[] argc){
-        strategyContext.newProfile("Jim");
-//        List<Profile> profileList = new ArrayList<>();
-//        List<Schedule> scheduleList = new ArrayList<>();
-//        profileList.add(CRMTest.profile1);
-//        profileList.add(CRMTest.profile2);
-//        scheduleList.add(CRMTest.schedule1);
-//        System.out.println(profileList);
-//        System.out.println(scheduleList);
+        profileList.newProfile("Stan");
+        profileList.newProfile("Yanming","158***9082","158***com","Unimelb","Jim");
+        schedulePage.newSchedule("meeting1", "1 Sep", "Home", "Stand-up meeting");
+        schedulePage.newSchedule("meeting2", "3 Sep", "Home", "Stand-up meeting");
+        schedulePage.newSchedule("meeting3", "5 Sep", "Home", "Stand-up meeting");
+
+        System.out.println(profileList.toString());
+        System.out.println(schedulePage.toString());
     }
 }

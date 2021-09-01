@@ -1,4 +1,5 @@
 public class Profile {
+    private Profile profile;
     private String name = "NULL";
     private String phone = "NULL";
     private String email = "NULL";
@@ -67,6 +68,8 @@ public class Profile {
                 ", remark='" + remark + '\'' +
                 '}';
     }
+
+
 }
 
 

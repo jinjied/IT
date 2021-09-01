@@ -1,4 +1,4 @@
-public class ProfileFactory {
+public class ProfileFactory extends INewProfileStrategy{
     private static ProfileFactory ProfileFactory = new ProfileFactory();
     private Profile profile = null;
 
@@ -9,12 +9,17 @@ public class ProfileFactory {
         return ProfileFactory;
     }
 
-    public Profile getProfile(String name){
-        profile = new Profile(name);
+//    public Profile getProfile(String name){
+//        profile = new Profile(name);
+//        return profile;
+//    }
+    public Profile newObject(String name, String phone, String email, String teamName, String remark) {
+        profile = new Profile(name,phone,email,teamName,remark);
         return profile;
     }
-    public Profile getProfile(String name, String phone, String email, String teamName, String remark) {
-        profile = new Profile(name,phone,email,teamName,remark);
+
+    public Profile newObject(String name){
+        profile = new Profile(name);
         return profile;
     }
 }

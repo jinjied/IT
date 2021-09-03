@@ -5,5 +5,5 @@ Comp30022 assignment
 ###### DashBoard
 <p float="left">
   <img src="/Mockup/Dashboard.png" />
-  <img src="/images/Project overview.png" /> 
+  <img src="/Mockup/Project overview.png" /> 
 </p>

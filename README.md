@@ -27,7 +27,7 @@ A list of contacts is displayed here, along with details about each contact, you
 Here's the location of Contact Mockup```/Mockup/Contact```.
 <p float="left">
   <img src="/Mockup/Contact/Contact.png" />
-  <img src="/Mockup/Contact/Contact-   details-1 - schedule details.png" />
+  <img src="/Mockup/Contact/Contact-details-1.png" />
   <img src="/Mockup/Contact/Contact- BAR.png" />
 </p>
 

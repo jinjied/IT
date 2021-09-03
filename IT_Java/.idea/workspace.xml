@@ -52,6 +52,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -76,6 +77,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CRM" />
@@ -94,6 +106,7 @@
       <workItem from="1630404176355" duration="16354000" />
       <workItem from="1630654115900" duration="360000" />
       <workItem from="1630654568925" duration="169000" />
+      <workItem from="1630654763081" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="Added strategy pattern">
       <created>1630462098929</created>
@@ -116,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630654588506</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish add functions">
+      <created>1630654781147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630654781147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,29 +185,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1630463306693" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom" timestamp="1630543802381">
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom" timestamp="1630654871757">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1630543802381" />
-    <state width="1398" height="236" key="GridCell.Tab.0.center" timestamp="1630543802380">
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1630654871757" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center" timestamp="1630654871756">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1630543802380" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left" timestamp="1630543802380">
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1630654871756" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left" timestamp="1630654871744">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1630543802380" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right" timestamp="1630543802381">
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1630654871744" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right" timestamp="1630654871756">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1630543802381" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1630654871756" />
     <state x="358" y="215" key="MultipleFileMergeDialog" timestamp="1630654272910">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="358" y="215" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1630654272910" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1630654608740">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1630654798630">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1630654608740" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1630654798630" />
   </component>
 </project>

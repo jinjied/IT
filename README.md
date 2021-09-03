@@ -24,7 +24,7 @@ Here's the location of Calendar Mockup```/Mockup/Calendar```.
 
 ###### Contact
 A list of contacts is displayed here, along with details about each contact, you can import or export contacts in batches and send them email.
-Here's the location of Contact Mockup````/Mockup/Contact```.
+Here's the location of Contact Mockup```/Mockup/Contact```.
 <p float="left">
   <img src="/Mockup/Contact/Contact.png" />
   <img src="/Mockup/Contact/Contact-   details-1 - schedule details.png" />
@@ -33,8 +33,8 @@ Here's the location of Contact Mockup````/Mockup/Contact```.
 
 ###### Setting
 You can modify your personal information, reminder time, font size, email, password...
-Here's the location of Setting Mockup````/Mockup/Setting```.
+Here's the location of Setting Mockup```/Mockup/Setting```.
 <p float="left">
-  <img src="/Mockup/Setting- Account.png" />
+  <img src="/Mockup/Setting/Setting- Account.png" />
 </p>
 

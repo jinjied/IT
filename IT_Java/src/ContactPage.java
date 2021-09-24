@@ -3,7 +3,7 @@ import java.util.List;
 
 public class ContactPage {
     private NewContactStrategy NewContactStrategy = new NewContactStrategy();
-    private SortContactStrategy sortContactStrategy = new SortContactStrategy();
+    private ContactSortStrategy contactSortStrategy = new ContactSortStrategy();
     private ContactSearchStrategy contactSearchStrategy = new ContactSearchStrategy();
 
     private List<Contact> contactList = new ArrayList<>();
@@ -16,6 +16,10 @@ public class ContactPage {
         contactList.add(NewContactStrategy.newObject(name,phone,email,teamName,remark));
     }
 
+    public void newContact(Contact contact){
+        contactList.add(contact);
+    }
+
     public ContactPage() {
     }
 
@@ -24,19 +28,24 @@ public class ContactPage {
     }
 
     public List<Contact> sortName() {
-        return sortContactStrategy.sortName(this.contactList);
+        return contactSortStrategy.sortName(this.contactList);
     }
 
     public List<Contact> sortPhone() {
-        return sortContactStrategy.sortPhone(this.contactList);
+        return contactSortStrategy.sortPhone(this.contactList);
     }
 
     public List<Contact> sortEmail() {
-        return sortContactStrategy.sortEmail(this.contactList);
+        return contactSortStrategy.sortEmail(this.contactList);
     }
 
     public Contact searchName(String name) {
         return contactSearchStrategy.bSearchName(this,name);
+    }
+
+    public List<Contact> deleteContact(Contact contact){
+        this.getContactList().remove(contact);
+        return this.getContactList();
     }
 
     @Override

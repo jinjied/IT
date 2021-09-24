@@ -5,6 +5,7 @@ public class Contact {
     private String email = "NULL";
     private String teamName = "NULL";
     private String remark = "NULL";
+    private Boolean marked = false;
 
     public String getName() {
         return name;
@@ -58,6 +59,11 @@ public class Contact {
         this.remark = remark;
     }
 
+    public Contact mark(){
+        this.marked = true;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "Contact{" +
@@ -66,6 +72,7 @@ public class Contact {
                 ", email='" + email + '\'' +
                 ", teamName='" + teamName + '\'' +
                 ", remark='" + remark + '\'' +
+                ", marked='" + marked + '\'' +
                 '}';
     }
 

@@ -1,5 +1,5 @@
-public class Profile {
-    private Profile profile;
+public class Contact {
+    private Contact contact;
     private String name = "NULL";
     private String phone = "NULL";
     private String email = "NULL";
@@ -46,11 +46,11 @@ public class Profile {
         this.remark = remark;
     }
 
-    public Profile(String name) {
+    public Contact(String name) {
         this.name = name;
     }
 
-    public Profile(String name, String phone, String email, String teamName, String remark) {
+    public Contact(String name, String phone, String email, String teamName, String remark) {
         this.name = name;
         this.phone = phone;
         this.email = email;
@@ -60,7 +60,7 @@ public class Profile {
 
     @Override
     public String toString() {
-        return "Profile{" +
+        return "Contact{" +
                 "name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +

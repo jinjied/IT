@@ -1,3 +1,5 @@
+import java.util.List;
+
 public interface ISortStrategy extends IStrategy{
-    public void sort();
+    public List<Contact> sort(List<Contact> lst);
 }

@@ -4,14 +4,15 @@ import java.util.List;
 public class ContactPage {
     private NewContactStrategy NewContactStrategy = new NewContactStrategy();
     private SortContactStrategy sortContactStrategy = new SortContactStrategy();
-    private List<Contact> contactList = new ArrayList<>();
-    //private List<Schedule> scheduleList = new ArrayList<>();
+    private ContactSearchStrategy contactSearchStrategy = new ContactSearchStrategy();
 
-    public void newProfile(String name){
+    private List<Contact> contactList = new ArrayList<>();
+
+    public void newContact(String name){
         contactList.add(NewContactStrategy.newObject(name));
     }
 
-    public void newProfile(String name, String phone, String email, String teamName, String remark) {
+    public void newContact(String name, String phone, String email, String teamName, String remark) {
         contactList.add(NewContactStrategy.newObject(name,phone,email,teamName,remark));
     }
 
@@ -23,7 +24,19 @@ public class ContactPage {
     }
 
     public List<Contact> sortName() {
-        return sortContactStrategy.sort(this.contactList);
+        return sortContactStrategy.sortName(this.contactList);
+    }
+
+    public List<Contact> sortPhone() {
+        return sortContactStrategy.sortPhone(this.contactList);
+    }
+
+    public List<Contact> sortEmail() {
+        return sortContactStrategy.sortEmail(this.contactList);
+    }
+
+    public Contact searchName(String name) {
+        return contactSearchStrategy.bSearchName(this,name);
     }
 
     @Override

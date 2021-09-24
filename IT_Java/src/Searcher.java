@@ -1,8 +1,8 @@
 import java.util.List;
 
-public class ContactSearchStrategy implements ISearchStrategy{
-    public Contact bSearchName(ContactPage contactPage, String name){
-            List<Contact> lst = contactPage.sortName();
+public class Searcher{
+    public CRMObject bSearchName(CRMObjectPage objectPage, String name){
+            List<CRMObject> lst = objectPage.sortName();
             int l = 0, r = lst.size() - 1;
             while (l <= r) {
                 int m = l + (r - l) / 2;

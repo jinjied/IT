@@ -4,9 +4,9 @@ public class CRMTest {
     public ContactPage contactPage = new ContactPage();
     public SchedulePage schedulePage = new SchedulePage();
 
-    Contact contact1 = new Contact("Tianyu");
+    //Contact contact1 = new Contact("Tianyu");
     public ContactPage loadContact(){
-        contactPage.newContact(contact1);
+        //contactPage.newContact(contact1);
         contactPage.newContact("Yanming","158***9082","158***com","Unimelb","Jim");
         contactPage.newContact("Banming","258***9082","958***com","Knimelb","Lim");
         contactPage.newContact("Canming","358***9082","858***com","Pnimelb","Nim");

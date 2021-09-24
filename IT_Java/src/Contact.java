@@ -1,5 +1,4 @@
-public class Contact {
-    private Contact contact;
+public class Contact extends CRMObject{
     private String name = "NULL";
     private String phone = "NULL";
     private String email = "NULL";
@@ -47,6 +46,7 @@ public class Contact {
         this.remark = remark;
     }
 
+
     public Contact(String name) {
         this.name = name;
     }
@@ -59,6 +59,9 @@ public class Contact {
         this.remark = remark;
     }
 
+    public Contact(String name, String phone){
+
+    }
     public Contact mark(){
         this.marked = true;
         return this;

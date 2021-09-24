@@ -1,49 +1,50 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContactPage {
-    private NewContactStrategy NewContactStrategy = new NewContactStrategy();
-    private ContactSortStrategy contactSortStrategy = new ContactSortStrategy();
-    private ContactSearchStrategy contactSearchStrategy = new ContactSearchStrategy();
+public class ContactPage extends CRMObjectPage{
+    private Sorter sorter = new Sorter();
+    private Searcher searcher = new Searcher();
 
-    private List<Contact> contactList = new ArrayList<>();
+    private List<CRMObject> contactList = new ArrayList<>();
 
     public void newContact(String name){
-        contactList.add(NewContactStrategy.newObject(name));
+        contactList.add(new CRMObject(name));
     }
 
     public void newContact(String name, String phone, String email, String teamName, String remark) {
-        contactList.add(NewContactStrategy.newObject(name,phone,email,teamName,remark));
+        contactList.add(new Contact(name,phone,email,teamName,remark));
     }
-
-    public void newContact(Contact contact){
+    public void newContact(String name, String phone){
+        contactList.add(new Contact(name, phone));
+    }
+    public void newContact(CRMObject contact){
         contactList.add(contact);
     }
 
     public ContactPage() {
     }
 
-    public List<Contact> getContactList() {
+    public List<CRMObject> getContactList() {
         return contactList;
     }
 
-    public List<Contact> sortName() {
-        return contactSortStrategy.sortName(this.contactList);
+    public List<CRMObject> sortName() {
+        return sorter.sortName(this.contactList);
     }
 
-    public List<Contact> sortPhone() {
-        return contactSortStrategy.sortPhone(this.contactList);
+    public List<CRMObject> sortPhone() {
+        return sorter.sortPhone(this.contactList);
     }
 
-    public List<Contact> sortEmail() {
-        return contactSortStrategy.sortEmail(this.contactList);
+    public List<CRMObject> sortEmail() {
+        return sorter.sortEmail(this.contactList);
     }
 
-    public Contact searchName(String name) {
-        return contactSearchStrategy.bSearchName(this,name);
+    public CRMObject searchName(String name) {
+        return searcher.bSearchName(this, name);
     }
 
-    public List<Contact> deleteContact(Contact contact){
+    public List<CRMObject> deleteContact(CRMObject contact){
         this.getContactList().remove(contact);
         return this.getContactList();
     }

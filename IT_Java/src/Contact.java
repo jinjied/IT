@@ -67,6 +67,12 @@ public class Contact extends CRMObject{
         return this;
     }
 
+    public String toCsv(){
+        String csv = this.getName() + ',' + this.getPhone() + ',' + this.getEmail() + ','
+                + ',' + this.getTeamName()+ ',' + this.getRemark();
+        return csv;
+    }
+
     @Override
     public String toString() {
         return "Contact{" +

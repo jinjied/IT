@@ -49,6 +49,12 @@ public class Schedule extends CRMObject{
         this.context = context;
     }
 
+    public String toCsv(){
+        String csv = this.getName() + ',' + this.getTime() + ',' + this.getAddress() + ','
+                + ',' + this.getContext();
+        return csv;
+    }
+
     @Override
     public String toString() {
         return "Schedule{" +

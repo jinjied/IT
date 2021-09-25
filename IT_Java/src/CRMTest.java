@@ -14,11 +14,11 @@ public class CRMTest {
         return this.contactPage;
     }
 
-    public List<Schedule> loadSchedule(){
+    public SchedulePage loadSchedule(){
         schedulePage.newSchedule("meeting1", "1 Sep", "Home", "Stand-up meeting");
-        schedulePage.newSchedule("meeting2", "3 Sep", "Home", "Stand-up meeting");
-        schedulePage.newSchedule("meeting3", "5 Sep", "Home", "Stand-up meeting");
-        return schedulePage.getScheduleList();
+        schedulePage.newSchedule("aeeting2", "3 Sep", "zome", "Ytand-up meeting");
+        schedulePage.newSchedule("beeting3", "5 Sep", "xome", "Ttand-up meeting");
+        return schedulePage;
     }
 
     public CRMTest() {

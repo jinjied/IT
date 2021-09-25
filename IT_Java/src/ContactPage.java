@@ -2,9 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContactPage extends CRMObjectPage{
-    private Sorter sorter = new Sorter();
-    private Searcher searcher = new Searcher();
-
     private List<CRMObject> contactList = new ArrayList<>();
 
     public void newContact(String name){
@@ -29,19 +26,19 @@ public class ContactPage extends CRMObjectPage{
     }
 
     public List<CRMObject> sortName() {
-        return sorter.sortName(this.contactList);
+        return super.sorter.sortName(this.contactList);
     }
 
     public List<CRMObject> sortPhone() {
-        return sorter.sortPhone(this.contactList);
+        return super.sorter.sortPhone(this.contactList);
     }
 
     public List<CRMObject> sortEmail() {
-        return sorter.sortEmail(this.contactList);
+        return super.sorter.sortEmail(this.contactList);
     }
 
     public CRMObject searchName(String name) {
-        return searcher.bSearchName(this, name);
+        return super.searcher.bSearchName(this, name);
     }
 
     public List<CRMObject> deleteContact(CRMObject contact){

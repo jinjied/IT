@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Schedule {
+public class Schedule extends CRMObject{
     private String name = "NULL";
     private String time = "NULL";
     private String address = "NULL";

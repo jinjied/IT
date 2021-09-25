@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CRMObjectPage{
-    private Sorter sorter = new Sorter();
-    private Searcher searcher = new Searcher();
+    protected Sorter sorter = new Sorter();
+    protected Searcher searcher = new Searcher();
 
     private List<CRMObject> objectList = new ArrayList<>();
 

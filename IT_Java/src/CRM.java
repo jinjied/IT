@@ -1,10 +1,12 @@
 import java.util.List;
 
 public class CRM {
+    static Importer importer = new Importer();
     static CRMTest crmTest = new CRMTest();
     static ContactPage contactPage = crmTest.loadContact();
     static SchedulePage schedulePage = crmTest.loadSchedule();
     public static void main(String[] argc){
+        importer.loadCSV(contactPage.getContactList(),schedulePage.getScheduleList());
         Contact contact1 = new Contact("Tianyu");
         contactPage.newContact(contact1);
         System.out.println(schedulePage.toString());

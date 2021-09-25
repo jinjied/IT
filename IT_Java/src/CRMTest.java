@@ -18,6 +18,7 @@ public class CRMTest {
         schedulePage.newSchedule("meeting1", "1 Sep", "Home", "Stand-up meeting");
         schedulePage.newSchedule("aeeting2", "3 Sep", "zome", "Ytand-up meeting");
         schedulePage.newSchedule("beeting3", "5 Sep", "xome", "Ttand-up meeting");
+        schedulePage.newSchedule("beeting3", "6 Sep", "xome", "Ttand-up meeting");
         return schedulePage;
     }
 

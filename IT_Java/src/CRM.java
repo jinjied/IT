@@ -9,7 +9,7 @@ public class CRM {
         contactPage.newContact(contact1);
         System.out.println(schedulePage.toString());
         System.out.println(schedulePage.sortName().toString());
-        System.out.println(schedulePage.searchName("aeeting2"));
+        System.out.println(schedulePage.bSearchAll("beeting3"));
 
 //        System.out.println(contactPage.getContactList());
         //System.out.println(schedulePage.deleteContact(contact1));

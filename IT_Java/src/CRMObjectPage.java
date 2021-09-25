@@ -27,6 +27,14 @@ public class CRMObjectPage{
         return searcher.bSearchName(this,name);
     }
 
+    public int searchName1(String name) {
+        return searcher.bSearchName1(this.sortName(),name);
+    }
+
+    public List<CRMObject> bSearchAll(String name) {
+        return searcher.bSearchAll(this,name);
+    }
+
     public List<CRMObject> deleteContact(CRMObject contact){
         this.getContactList().remove(contact);
         return this.getContactList();

@@ -1,4 +1,5 @@
 public class Contact extends CRMObject{
+    // Attributes of a contact
     private String name = "NULL";
     private String phone = "NULL";
     private String email = "NULL";
@@ -6,6 +7,7 @@ public class Contact extends CRMObject{
     private String remark = "NULL";
     private Boolean marked = false;
 
+    // Getter and setters
     public String getName() {
         return name;
     }
@@ -46,11 +48,12 @@ public class Contact extends CRMObject{
         this.remark = remark;
     }
 
-
+    // Constructor
     public Contact(String name) {
         this.name = name;
     }
 
+    // Overload constructor
     public Contact(String name, String phone, String email, String teamName, String remark) {
         this.name = name;
         this.phone = phone;
@@ -59,20 +62,26 @@ public class Contact extends CRMObject{
         this.remark = remark;
     }
 
-    public Contact(String name, String phone){
 
+    public Contact(String name, String phone){
+        this.name = name;
+        this.phone = phone;
     }
+
+    // This method marks the contact as "important"
     public Contact mark(){
         this.marked = true;
         return this;
     }
 
+    // This method is returning the attribute information into a csv format
     public String toCsv(){
         String csv = this.getName() + ',' + this.getPhone() + ',' + this.getEmail() + ','
                 + ',' + this.getTeamName()+ ',' + this.getRemark();
         return csv;
     }
 
+    // ToString method
     @Override
     public String toString() {
         return "Contact{" +
